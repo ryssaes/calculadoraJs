@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --Spartan: "League Spartan";
+    --mainbg: hsl(222, 26%, 31%);
+    --mainshadow: hsl(224, 28%, 35%);
+    --mainscreen: hsl(224, 36%, 15%);
+    --mainkey: hsl(223, 31%, 20%);
+    --mainreset: hsl(225, 21%, 49%);
+    --red: hsl(6, 63%, 50%);
+    --redshadow: hsl(6, 70%, 34%);
+    --mainbutton: hsl(30, 25%, 89%);
+    --shadowbutton: hsl(28, 16%, 65%);
+    --textbutton: hsl(221, 14%, 31%);
+    --hoverred: hsl(6, 55%, 54%);
+    --hoverblue: hsl(226, 21%, 64%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Spartan);
+}
+
+body {
+    width: 100%;
+    background: var(--mainbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav {
+    display: block;
+    color: white;
+}
+
+.num-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.theme{
+    font-size: 16px;
+}
+
+.num-theme {
+    display: flex;
+    justify-content: space-between;
+    height: 19px;
+}
+
+.num-theme span {
+    cursor: pointer;
+    width: 10px;
+    font-size: 14px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.screen {
+    width: 460px;
+}
+
+#screen {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--mainscreen);
+    text-align: right;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+button {
+    width: 85px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px 0px var(--shadowbutton);
+    margin: 11px;
+    color: var(--textbutton);
+    font-weight: 700;
+    font-size: 22px;
+    background-color: var(--mainbutton);
+}
+
+.cal-btn {
+    padding: 15px 5px;
+    display: flex;
+    width: 460px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.cal-btn button:nth-last-child(-n+2) {
+    width: 192px;
+}
+
+.calculador {
+    background-color: var(--mainkey);
+    border-radius: 10px;
+}
+
+.reset,
+.del {
+    background-color: var(--mainreset);
+    color: white;
+    box-shadow: 0px 5px 0px 0px var(--mainshadow);
+}
+
+.equal {
+    background-color: var(--red);
+    box-shadow: 0px 5px 0px 0px var(--redshadow);
+    color: white;
+}
+
+button.equal:hover {
+    background-color: var(--hoverred);
+}
+
+.del:hover,
+.reset:hover {
+    background-color: var(--hoverblue);
+}
+
+button:hover {
+    background-color: rgb(243, 243, 207);
+}
+
+.toggle{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.toggle .box{
+    width: 45px;
+	height: 20px;
+	background-color: hsl(224, 36%, 15%);
+	border-radius: 30px;
+	margin-left: 4px;
+	position: relative;
+}
+
+.toggle #circle{
+	width: 20px;
+	height: 20px;
+	background-color: hsl(6, 63%, 50%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: 30px;
+}

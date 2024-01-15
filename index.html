@@ -5,61 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadorajs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="nav">
-                        <div class="num-theme">
-                            <h1>Calc</h1>
-                            <div class="num-btn">
-                                <span id="one">1</span>
-                                <span id="two">2</span>
-                                <span id="three">3</span>
-                            </div>
-                        </div>
-                        <div class="toggle">
-                            <p class="theme">Theme</p>
-                            <div class="box">
-                                <div id="circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="screen">
-                        <form name="calc">
-                            <input type="text" name="text" readonly id="screen">
-                        </form>
-                    </div>
-                    <div class="calculador">
-                        <div class="cal-btn">
-                            <button class="num" onclick="document.calc.text.value+='7'">7</button>
-                            <button class="num" onclick="document.calc.text.value+='8'">8</button>
-                            <button class="num" onclick="document.calc.text.value+='9'">9</button>
-                            <button class="del" onclick="del()">DEL</button>
-                            <button class="num" onclick="document.calc.text.value+='4'">4</button>
-                            <button class="num" onclick="document.calc.text.value+='5'">5</button>
-                            <button class="num" onclick="document.calc.text.value+='6'">6</button>
-                            <button onclick="document.calc.text.value+='+'">+</button>
-                            <button class="num" onclick="document.calc.text.value+='1'">1</button>
-                            <button class="num" onclick="document.calc.text.value+='2'">2</button>
-                            <button class="num" onclick="document.calc.text.value+='3'">3</button>
-                            <button onclick="document.calc.text.value+='-'">-</button>
-                            <button onclick="document.calc.text.value+='.'">.</button>
-                            <button class="num" onclick="document.calc.text.value+='0'">0</button>
-                            <button onclick="document.calc.text.value+='/'">/</button>
-                            <button onclick="document.calc.text.value+='*'">X</button>
-                            <button class="reset" onclick="document.calc.text.value=''">RESET</button>
-                            <button class="equal" onclick="document.calc.text.value= eval(calc.text.value)">=</button>
-                        </div>
-                    </div>
+        <div class="nav">
+            <div class="num-theme">
+                <h1>Calc</h1>
+                <div class="num-btn">
+                    <span id="one">1</span>
+                    <span id="two">2</span>
+                    <span id="three">3</span>
                 </div>
+            </div>
+            <div class="toggle">
+                <p class="theme">Theme</p>
+                <div class="box">
+                    <div id="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <form name="calc">
+                <input type="text" name="text" readonly id="screen">
+            </form>
+        </div>
+        <div class="calculador">
+            <div class="cal-btn">
+                <button class="num" onclick="document.calc.text.value+='7'">7</button>
+                <button class="num" onclick="document.calc.text.value+='8'">8</button>
+                <button class="num" onclick="document.calc.text.value+='9'">9</button>
+                <button class="del" onclick="del()">DEL</button>
+                <button class="num" onclick="document.calc.text.value+='4'">4</button>
+                <button class="num" onclick="document.calc.text.value+='5'">5</button>
+                <button class="num" onclick="document.calc.text.value+='6'">6</button>
+                <button onclick="document.calc.text.value+='+'">+</button>
+                <button class="num" onclick="document.calc.text.value+='1'">1</button>
+                <button class="num" onclick="document.calc.text.value+='2'">2</button>
+                <button class="num" onclick="document.calc.text.value+='3'">3</button>
+                <button onclick="document.calc.text.value+='-'">-</button>
+                <button onclick="document.calc.text.value+='.'">.</button>
+                <button class="num" onclick="document.calc.text.value+='0'">0</button>
+                <button onclick="document.calc.text.value+='/'">/</button>
+                <button onclick="document.calc.text.value+='*'">X</button>
+                <button class="reset" onclick="document.calc.text.value=''">RESET</button>
+                <button class="equal" onclick="document.calc.text.value= eval(calc.text.value)">=</button>
             </div>
         </div>
     </main>

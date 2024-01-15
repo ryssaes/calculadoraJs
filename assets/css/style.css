@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 :root {
+    /* font */
     --Spartan: "League Spartan";
+    /* theme 1 */
     --mainbg: hsl(222, 26%, 31%);
     --mainshadow: hsl(224, 28%, 35%);
     --mainscreen: hsl(224, 36%, 15%);
@@ -14,6 +16,19 @@
     --textbutton: hsl(221, 14%, 31%);
     --hoverred: hsl(6, 55%, 54%);
     --hoverblue: hsl(226, 21%, 64%);
+    /* theme 2 */
+    --bg2: hsl(0, 0%, 90%);
+    --key2: hsl(0, 5%, 81%);
+    --screen2: hsl(0, 0%, 93%);
+    --cyan: hsl(185, 42%, 37%);
+    --shadowncyan: hsl(185, 58%, 25%);
+    --orange: hsl(25, 98%, 40%);
+    --shadownorange: hsl(25, 99%, 27%);
+    --keybg2: hsl(45, 7%, 89%);
+    --shadownbg2: hsl(35, 11%, 61%);
+    --keybg2hover: hsl(45, 100%, 99%);
+    --cyanhover: hsl(185, 39%, 55%);
+    --orangehover:rgb(231, 115, 33);
 }
 
 * {
@@ -24,12 +39,12 @@
 }
 
 body {
-    width: 100%;
     background: var(--mainbg);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 700;
 }
 
 main {
@@ -58,10 +73,15 @@ main {
     height: 19px;
 }
 
+h1{
+    font-size: 23px;
+    font-weight: 700;
+}
+
 .num-theme span {
     cursor: pointer;
     width: 10px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .toggle {
@@ -75,6 +95,7 @@ main {
 }
 
 #screen {
+    margin-top: 15px;
     width: 100%;
     height: 100px;
     border-radius: 10px;
@@ -84,7 +105,7 @@ main {
     text-align: right;
     color: white;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 button {
@@ -158,6 +179,7 @@ button:hover {
 	border-radius: 30px;
 	margin-left: 4px;
 	position: relative;
+    cursor: pointer;
 }
 
 .toggle #circle{
@@ -169,4 +191,73 @@ button:hover {
 	left: 0;
 	z-index: 1;
 	border-radius: 30px;
+}
+
+body.active1{
+	background-color: var(--bg2);
+}
+
+body.active1 .nav{
+	color: black;
+}
+
+body.active1 .calculador{
+    background-color: var(--key2);
+}
+
+body.active1 .box{
+    background-color: var(--key2);
+}
+
+body.active1 #screen{
+    background-color: var(--screen2);
+    color: black;
+}
+
+body.active1 button{
+    background-color: var(--keybg2);
+    box-shadow: 0px 5px 0px 0px var(--shadownbg2);
+    color: black;
+}
+
+body.active1 button:hover{
+    background-color: var(--keybg2hover);
+}
+
+body.active1 .del{
+    color: white;
+    background-color: var(--cyan);
+    box-shadow: 0px 5px 0px 0px var(--shadowncyan);
+}
+
+body.active1 .del:hover{
+    background-color: var(--cyanhover);
+}
+
+body.active1 .reset{
+    color: white;
+    background-color: var(--cyan);
+    box-shadow: 0px 5px 0px 0px var(--shadowncyan);
+}
+
+body.active1 .reset:hover{
+    background-color: var(--cyanhover);
+}
+
+body.active1 .equal{
+    color: white;
+    background-color: var(--orange);
+    box-shadow: 0px 5px 0px 0px var(--shadownorange);
+}
+
+body.active1 .equal:hover{
+    background-color: var(--orangehover);
+}
+
+body.active1 #circle{
+    background-color: var(--orange);
+}
+
+body.active2{
+	background-color: red;
 }

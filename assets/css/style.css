@@ -29,6 +29,16 @@
     --keybg2hover: hsl(45, 100%, 99%);
     --cyanhover: hsl(185, 39%, 55%);
     --orangehover:rgb(231, 115, 33);
+    /* theme 3*/
+    --bg3: hsl(268, 75%, 9%);
+    --screen3: hsl(268, 71%, 12%);
+    --key3: hsl(281, 89%, 26%);
+    --green: hsl(177, 63%, 41%);
+    --shadown3: hsl(177, 92%, 70%);
+    --darkviolet: hsl(268, 47%, 21%);
+    --darkmagenta: hsl(290, 70%, 36%);
+    --yellow: hsl(52, 100%, 62%);
+    --darkblue:  hsl(303, 63%, 21%);
 }
 
 * {
@@ -259,8 +269,71 @@ body.active1 #circle{
     background-color: var(--orange);
 }
 
+/* --------------------------------------------------------------------------------- */
+
 body.active2{
-	background-color: red;
+	background-color: var(--bg3);
+}
+
+body.active2 .nav{
+	color: var(--yellow);
+}
+
+body.active2 .calculador{
+    background-color: var(--screen3);
+}
+
+body.active2 .box{
+    background-color: var(--screen3);
+}
+
+body.active2 #screen{
+    background-color: var(--screen3);
+    color: var(--yellow);
+}
+
+body.active2 button{
+    background-color: var(--darkviolet);
+    box-shadow: 0px 5px 0px 0px var(--darkblue);
+    color: var(--yellow);
+}
+
+body.active2 button:hover{
+    background-color: var(--darkblue);
+}
+
+body.active2 .del{
+    color: white;
+    background-color: var(--darkblue);
+    box-shadow: 0px 5px 0px 0px var(--darkmagenta);
+}
+
+body.active2 .del:hover{
+    background-color: var(--darkmagenta);
+}
+
+body.active2 .reset{
+    color: white;
+    background-color: var(--darkblue);
+    box-shadow: 0px 5px 0px 0px var(--darkmagenta);
+}
+
+body.active2 .reset:hover{
+    background-color: var(--darkmagenta);
+}
+
+body.active2 .equal{
+    color: black;
+    background-color: var(--green);
+    box-shadow: 0px 5px 0px 0px var(--shadown3);
+}
+
+body.active2 .equal:hover{
+    background-color: var(--shadown3);
+}
+
+body.active2 #circle{
+    background-color: var(--shadown3);
 }
 
 @media screen and (max-width: 440px){

@@ -130,6 +130,7 @@ button {
     width: 460px;
     flex-flow: wrap;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .cal-btn button:nth-last-child(-n+2) {
@@ -260,4 +261,65 @@ body.active1 #circle{
 
 body.active2{
 	background-color: red;
+}
+
+@media screen and (max-width: 440px){
+    .calculador{
+        margin: 0 auto;
+        width: 295px;
+    }
+
+    .cal-btn{
+        width: 285px;
+    }
+
+    button{
+        width: 56px;
+        padding: 5px;
+        margin: 6px;
+        font-size: 15px;
+    }
+
+    .cal-btn button:nth-last-child(-n+2){
+        width: 125px;
+    }
+
+    .screen{
+        width: 295px;
+    }
+
+    #screen{
+        height: 70px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .theme{
+        font-size: 13px;
+    }
+    
+    .num-btn{
+        gap: 0;
+    }
+
+    .num-btn span{
+        font-size: 8px;
+        width: 9px;
+    }
+
+    .num-theme{
+        height: 12px;
+    }
+
+    .toggle #circle{
+        width: 13px;
+        height: 13px;
+    }
+
+    .toggle .box{
+        width: 30px;
+        height: 13px;
+    }
 }

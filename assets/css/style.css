@@ -64,24 +64,24 @@ main {
 }
 
 .theme{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .num-theme {
     display: flex;
     justify-content: space-between;
-    height: 19px;
+    height: 25px;
 }
 
 h1{
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .num-theme span {
     cursor: pointer;
     width: 10px;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .toggle {
@@ -266,26 +266,26 @@ body.active2{
 @media screen and (max-width: 440px){
     .calculador{
         margin: 0 auto;
-        width: 295px;
+        width: 255px;
     }
 
     .cal-btn{
-        width: 285px;
+        width: 250px;
     }
 
     button{
-        width: 56px;
-        padding: 5px;
-        margin: 6px;
-        font-size: 15px;
+        width: 49px;
+        padding: 11px;
+        margin: 7px 4px;
+        font-size: 20px;
     }
 
     .cal-btn button:nth-last-child(-n+2){
-        width: 125px;
+        width: 105px;
     }
 
     .screen{
-        width: 295px;
+        width: 255px;
     }
 
     #screen{
@@ -293,11 +293,11 @@ body.active2{
     }
 
     h1{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .theme{
-        font-size: 13px;
+        font-size: 18px;
     }
     
     .num-btn{
@@ -305,21 +305,21 @@ body.active2{
     }
 
     .num-btn span{
-        font-size: 8px;
-        width: 9px;
+        font-size: 15px;
+        width: 13px;
     }
 
     .num-theme{
-        height: 12px;
+        height: 25px;
     }
 
     .toggle #circle{
-        width: 13px;
-        height: 13px;
+        width: 19px;
+        height: 19px;
     }
 
     .toggle .box{
-        width: 30px;
-        height: 13px;
+        width: 42px;
+        height: 19px;
     }
 }
